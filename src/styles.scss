@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  /* Cores Principais baseadas no seu Layout */
+  --primary-color: #2563eb; /* Azul do botão "Nova Transação" */
+  --sidebar-bg: #0f172a; /* Azul escuro quase preto da Sidebar */
+  --sidebar-text: #94a3b8; /* Cinza claro para texto da sidebar */
+  --sidebar-active: #2563eb; /* Azul para item ativo */
+
+  /* Cores de Fundo */
+  --bg-color: #f1f5f9; /* Cinza gelo do fundo da tela */
+  --card-bg: #ffffff; /* Branco dos cards */
+
+  /* Cores de Status (Financeiro) */
+  --success: #10b981; /* Verde (Receitas/Pago) */
+  --danger: #ef4444; /* Vermelho (Despesas/Pendente) */
+  --text-dark: #1e293b; /* Texto escuro (Títulos) */
+  --text-light: #64748b; /* Texto cinza (Legendas) */
+}
+
+/* Reset básico para ficar bonito */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif; /* Se quiser, importamos a fonte depois */
+  background-color: var(--bg-color);
+  color: var(--text-dark);
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
