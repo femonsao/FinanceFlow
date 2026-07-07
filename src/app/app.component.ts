@@ -8,6 +8,7 @@ import {
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { HeaderComponent } from './components/header/header.component';
 import { SideBarComponent } from './components/side-bar/side-bar.component';
+import { ListComponent } from './components/list/list.component';
 
 @Component({
   selector: 'app-root',
@@ -18,12 +19,20 @@ import { SideBarComponent } from './components/side-bar/side-bar.component';
     FontAwesomeModule,
     HeaderComponent,
     SideBarComponent,
+    ListComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
   title = 'FinanceFlow';
+
+  sideBarButtons: { label: string; url: string }[] = [
+    { label: 'Dashboard', url: '/dashboard' },
+    { label: 'Transações',url: '/transactions' },
+  ];
+
+
   constructor(library: FaIconLibrary) {
     library.addIconPacks(fas);
   }

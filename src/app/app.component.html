@@ -1,7 +1,5 @@
-<div class="container">
-  <div class="flex w-full">
-    <app-side-bar class="w-1"></app-side-bar>
-    <app-header class="w-5"></app-header>
-  </div>
+<app-side-bar [buttons]="sideBarButtons"></app-side-bar>
+<app-header></app-header>
+<main class="content">
   <router-outlet></router-outlet>
-</div>
+</main>
