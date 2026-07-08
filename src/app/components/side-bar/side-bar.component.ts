@@ -1,6 +1,6 @@
 import { Component, inject, input } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
-import { SquaredIconComponent } from "../squared-icon/squared-icon.component";
+import { SquaredIconComponent } from "../../lib/squared-icon/squared-icon.component";
 
 @Component({
   selector: 'app-side-bar',
